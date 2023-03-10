@@ -8,28 +8,18 @@
     <title>change color
     </title>
     <script>
-    $(document).ready(function(){
-    $("div").hover(function(){
-        $(this).css({
-        "background-color" :　"black",
-        "color" : "white"
-    });
-    },
-    function(){
-        $(this).css({
-        "background-color" :　"white",
-        "color" : "black"
-    });
-    });
-});
+              $(document).ready(function () {
+              $("#b1").click(function(){
+                $("p").text("Added Test")      
+            });
+        });
 
 </script>
 </head>
 <body>
     <div>
-        <p>PARAGRAPH 1</p>
-        <p>PARAGRAPH 2</p>
-       <p>PARAGRAPH 3</p>
+        <p></p>
     </div>
+    <input type="button" id="b1" value="click">
 </body>
 </html>

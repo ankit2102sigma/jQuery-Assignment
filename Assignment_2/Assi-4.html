@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>change color
+    </title>
+    <script>
+    $(document).ready(function(){
+    $("div").hover(function(){
+        $(this).css({
+        "background-color" :　"black",
+        "color" : "white"
+    });
+    },
+    function(){
+        $(this).css({
+        "background-color" :　"white",
+        "color" : "black"
+    });
+    });
+});
+
+</script>
 </head>
 <body>
-    
+    <div>
+        <p>PARAGRAPH 1</p>
+        <p>PARAGRAPH 2</p>
+       <p>PARAGRAPH 3</p>
+    </div>
 </body>
 </html>
