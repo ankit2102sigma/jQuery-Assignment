@@ -28,11 +28,18 @@
 <script>
   $(document).ready(function(){
   $('#b1').click(function(){
-    $('#customers tr:last').remove();
+    $('#customers tr:even').css({
+        "background-color" :　"black",
+        "color" : "white"
+    });
+    $('#customers tr:odd').css({
+        "background-color" :　"yellow",
+        "color" : "black"
+    });
 })
   });
   </script>
-</head>var fn = $("#fname").val();
+</head>
 <body>
 
 <h1>Table</h1>
