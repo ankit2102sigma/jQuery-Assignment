@@ -2,8 +2,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		select {
+			display: block;
+			margin-bottom: 20px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 200px;
+			font-size: 16px;
+		}
+
+		select:focus {
+			outline: none;
+			border-color: #007bff;
+			box-shadow: 0 0 5px #007bff;
+		}
+	</style>
 	<title>Country and State Dropdown</title>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			var countryList = [

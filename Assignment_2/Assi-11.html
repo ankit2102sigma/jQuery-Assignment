@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function() {
+         $('#image-selector').on('change', function() {
+         var selectedImage = $(this).val();
+          $('#image-container img').attr('src', selectedImage);
+         });
+        });
+        </script>
+</head>
+
+<body>
+
+
+<select style="width: 500px; text-align: center; margin: 10px 20px 30px 10px;" id="image-selector">
+    <option value="felix-lam-J7fxkhtOqt0-unsplash.jpg">Image 1</option>
+    <option value="ott-erik-eendra-bS0Fyu-z1l0-unsplash.jpg">Image 2</option>
+     <option value="brands.jpg">Image 3</option>
+</select>
+<div id="image-container">
+  <img style="width: 100%; height: 1000px;" src="felix-lam-J7fxkhtOqt0-unsplash.jpg" alt="">
+
+</div>
+
+</body>
+
+</html>
